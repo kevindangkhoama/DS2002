@@ -44,6 +44,10 @@ def getStock():
     stock_json2 = response2.json()
     stock_json3 = response3.json()
     
+    # print(stock_json)
+    # print(stock_json2)
+    # print(stock_json3)
+    
     # Handling Error for if the stock doesn't exist
     if len(stock_json['quoteResponse']['result']) == 0:
         print("Stock does not exist")
